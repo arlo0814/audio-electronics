@@ -94,10 +94,6 @@
 
 | Payment History                                        | Date           | Payment   | Balance   | Mode of Payment |
 |--------------------------------------------------------|----------------|-----------|-----------|-----------------|
-| OMBID, Allen Ross                                      | 21 AUG 2025    | 200 Php   | 0 Php     | GCash           |
-| KOBAYASHI, Hiro Joven                                  | 11 SEPT 2025   | 200 Php   | 0 Php     | GCash           |
-| FERNANDEZ, Audrey Anne                                 | 13 SEPT 2025   | 200 Php   | 0 Php     | GCash           |
-| ALVARO, Cedric                                         | 13 SEPT 2025   | 200 Php   | 0 Php     | Cash            |
-| MANGUNDAYO, Arjel Miguel                               | 13 SEPT 2025   | 200 Php   | 0 Php     | Cash            |
-| ESTOQUIA, Mark Jayron                                  | 13 SEPT 2025   | 100 Php   | 100 Php   | Cash            |
-| ESTOQUIA, Mark Jayron                                  | 20 SEPT 2025   | 100 Php   | 0 Php     | Cash            |
+| CABRERA, Ian Patrick                                   | XX             | XX Php    | XX Php    | XX              |
+| OMBID, Allen Ross                                      | XX             | XX Php    | XX Php    | XX              |
+| RABO, Reign Mathew                                     | XX             | XX Php    | XX Php    | XX              |
