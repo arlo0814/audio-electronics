@@ -1,0 +1,39 @@
+audio-amplifier-project/
+│
+├── README.md
+├── LICENSE
+├── .gitignore
+│
+├── docs/
+│   ├── block-diagram.mmd
+│   ├── system-overview.png
+│   ├── final-build.jpg
+│   └── testing-results.md
+│
+├── psu/
+│   ├── schematic.png
+│   ├── pcb-layout.png
+│   ├── calculations.md
+│   └── bom.csv
+│
+├── amplifier/
+│   ├── schematic.png
+│   ├── pcb-layout.png
+│   ├── simulations/
+│   ├── calculations.md
+│   └── bom.csv
+│
+├── equalizer/
+│   ├── schematic.png
+│   ├── pcb-layout.png
+│   ├── filter-analysis.md
+│   └── bom.csv
+│
+├── enclosure/
+│   ├── chassis-design.png
+│   └── wiring-layout.png
+│
+└── media/
+    ├── soldering-progress/
+    ├── demo-video.mp4
+    └── finished-system/
