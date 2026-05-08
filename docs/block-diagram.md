@@ -1,0 +1,18 @@
+```mermaid
+flowchart LR
+
+    A["AUDIO SOURCE<br>(PHONE)"] --> B["10-BAND<br>EQUALIZER"]
+    B --> C["CLASS AB<br>AMPLIFIER"]
+    C --> D["3-WAY PASSIVE<br>CROSSOVER"]
+
+    D --> W["WOOFER"]
+    D --> M["MIDRANGE"]
+    D --> T["TWEETER"]
+
+    AC["220 V AC"] --> PSU["POWER SUPPLY<br>UNIT"]
+
+    PSU --> C
+
+    PSU --> REG["LINEAR<br>REGULATOR"]
+    REG --> B
+```
