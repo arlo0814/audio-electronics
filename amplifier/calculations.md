@@ -20,6 +20,9 @@ $$V_{bias} = V_{D2} + V_{D4} + (I_{C3} \cdot R_{10}) = 0.7 + 0.7 + (2.385 \times
 
 $$I_{q\text{-out}} = \frac{V_{bias} - (V_{BE\text{-power}} + V_{BE\text{-driver}})}{R_{11} + R_{12} + R_{16} + R_{17}} = \frac{1.785 - (0.7 + 0.7)}{10 + 100 + 0.47 + 0.47}$$$$I_{q\text{-out}} = 3.470\text{ mA}$$$$A_v = \frac{R_L}{R_L + r_e + R_E} \approx 1$$$$A_i = h_{FE} \approx 60$$
 
+## Total Gain
+
+$$A_{v\text{-total}} = A_{v\text{-input}} \cdot A_{v\text{-VAS}} \cdot A_{v\text{-driver}} \cdot A_{v\text{-pout}}$$$$A_{v\text{-total}} = 12.93 \cdot 9174 \cdot 1 \cdot 1$$$$A_{v\text{-total}} = 118619.82$$$$A_{v\text{-dB}} = 20 \log(118619.82)$$$$A_{v\text{-dB}} = 101.48\text{ dB}$$$$A_{i\text{-total}} = A_{i\text{-input}} \cdot A_{i\text{-VAS}} \cdot A_{i\text{-driver}} \cdot A_{i\text{-pout}}$$$$A_{i\text{-total}} = 200 \cdot 100 \cdot 50 \cdot 60$$$$A_{i\text{-total}} = 60,000,000$$$$A_{i\text{-dB}} = 20 \log(60,000,000)$$$$A_{i\text{-dB}} = 155.56\text{ dB}$$$$A_{p\text{-total}} = A_{v\text{-total}} \cdot A_{i\text{-total}}$$$$A_{p\text{-total}} = 118619.82 \cdot 60,000,000$$$$A_{p\text{-total}} = 7.117 \times 10^{12}$$$$A_{p\text{-dB}} = 10 \log(7.117 \times 10^{12})$$$$A_{p\text{-dB}} = 128.52\text{ dB}$$
 
 
 
