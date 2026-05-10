@@ -16,3 +16,10 @@ $$V_{B3} = I_{C1} R_3 = (1.43\text{ mA})(470\text{ }\Omega) = 0.6721\text{ V}$$$
 
 $$V_{bias} = V_{D2} + V_{D4} + (I_{C3} \cdot R_{10}) = 0.7 + 0.7 + (2.385 \times 10^{-3} \cdot 150)$$$$V_{bias} = 1.758\text{ V}$$$$I_{q\text{-driver}} = \frac{V_{bias} - (V_{BE5} + V_{BE4})}{R_{12} + R_{11}} = \frac{1.758 - (0.7 + 0.7)}{100 + 10}$$$$I_{q\text{-driver}} = 3.255\text{ mA}$$$$r_e = \frac{26\text{ mV}}{I_{q\text{-driver}}} = \frac{26\text{ mV}}{3.255\text{ mA}} = 7.988\text{ }\Omega$$$$A_v = \frac{R_L}{R_L + r_e} \approx 1$$$$A_i = h_{FE} \approx 50$$
 
+## Power Output Stage
+
+$$I_{q\text{-out}} = \frac{V_{bias} - (V_{BE\text{-power}} + V_{BE\text{-driver}})}{R_{11} + R_{12} + R_{16} + R_{17}} = \frac{1.785 - (0.7 + 0.7)}{10 + 100 + 0.47 + 0.47}$$$$I_{q\text{-out}} = 3.470\text{ mA}$$$$A_v = \frac{R_L}{R_L + r_e + R_E} \approx 1$$$$A_i = h_{FE} \approx 60$$
+
+
+
+
