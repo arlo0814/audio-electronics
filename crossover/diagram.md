@@ -29,8 +29,8 @@ graph LR
     IN_N --- T_N[Treble -]
 
     %% Formatting
-    style IN_P fill:#f9f,stroke:#333,stroke-width:2px
-    style IN_N fill:#f9f,stroke:#333,stroke-width:2px
-    style PTC fill:#f96,stroke:#333
-    style R_ATT fill:#fff,stroke:#333,stroke-width:2px
+    style IN_P fill:#f00,stroke:#333,stroke-width:2px
+    style IN_N fill:#000,stroke:#333,stroke-width:2px
+    style PTC fill:#fa0,stroke:#333
+    style R_ATT fill:#999,stroke:#333,stroke-width:2px
 ```
