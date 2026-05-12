@@ -25,3 +25,9 @@ $$f_H = f_o + \frac{BW}{2} = 20.87 \cdot 10^3 + \frac{7204}{2} = 24.47 \text{ kH
 | 8 | 2.2 nF | 22 nF | 57.90 mH | 4.459 kHz | 2.897 | 1.539 kHz | 3.690 kHz | 5.229 kHz |
 | 9 | 1 nF | 10 nF | 26.32 mH | 9.810 kHz | 2.897 | 3.386 kHz | 8.117 kHz | 11.5 kHz |
 | 10 | 470 pF | 4.7 nF | 12.37 mH | 20.87 kHz | 2.897 | 7.204 kHz | 17.27 kHz | 24.47 kHz |
+
+## Output Filter Stage
+$$A_v = 1 + \frac{R_f}{R_{gyr}} = 1 + \frac{3300}{560} = 6.893$$
+$$A_{v-dB} = 20 \log(6.893) = 16.77 \text{ dB}$$
+$$f_{c-H} = \frac{1}{2\pi \cdot R_f \cdot C_{22}} = \frac{1}{2\pi(3300)(470 \cdot 10^{-12})} = 102.6 \text{ kHz}$$
+$$f_{c-L} = \frac{1}{2\pi \cdot R_{Load} \cdot C_{24}} = \frac{1}{2\pi(10000)(1 \cdot 10^{-6})} = 15.92 \text{ Hz}$$
