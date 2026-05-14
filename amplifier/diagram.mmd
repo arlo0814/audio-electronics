@@ -10,18 +10,19 @@ graph TD
     DS --> OPS[OUTPUT POWER STAGE]
     OPS --> OS[OUTPUT SIGNAL]
 
-    %% Power distribution connections
+    %% Positive Rail Connections (Red)
     PPS --> IDS
     PPS --> VAS
     PPS --> DS
     PPS --> OPS
 
+    %% Negative Rail Connections (Blue)
     NPS --> IDS
     NPS --> VAS
     NPS --> DS
     NPS --> OPS
 
-    %% Style
+    %% Styling Nodes
     style Power fill:#1a1a1a,stroke:#444,color:#fff
     style PPS fill:#008b8b,stroke:#fff,color:#fff
     style NPS fill:#008b8b,stroke:#fff,color:#fff
@@ -31,3 +32,13 @@ graph TD
     style DS fill:#2c3e50,stroke:#fff,color:#fff
     style OPS fill:#2c3e50,stroke:#fff,color:#fff
     style OS fill:#2c3e50,stroke:#fff,color:#fff
+
+    %% Styling Arrows (linkStyle uses 0-based indexing for lines)
+    %% Signal Path (default white/gray)
+    linkStyle 0,1,2,3,4 stroke:#fff,stroke-width:2px
+    
+    %% Positive Connections (Indices 5-8)
+    linkStyle 5,6,7,8 stroke:#ff4d4d,stroke-width:2px
+    
+    %% Negative Connections (Indices 9-12)
+    linkStyle 9,10,11,12 stroke:#4d94ff,stroke-width:2px
