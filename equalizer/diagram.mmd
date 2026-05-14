@@ -1,0 +1,40 @@
+graph TD
+    subgraph Power [Power Supply Rails]
+        PPS[POSITIVE POWER SUPPLY]
+        NPS[NEGATIVE POWER SUPPLY]
+    end
+
+    IS[INPUT SIGNAL] --> IB[INPUT BUFFER]
+    IB --> AFS[ACTIVE FILTER STAGE]
+    AFS --> SA[SUMMING AMPLIFIER]
+    SA --> OS[OUTPUT SIGNAL]
+
+    %% Positive Rail Connections (Red)
+    PPS --> IB
+    PPS --> AFS
+    PPS --> SA
+
+    %% Negative Rail Connections (Blue)
+    NPS --> IB
+    NPS --> AFS
+    NPS --> SA
+
+    %% Styling Nodes: Dark Theme
+    style Power fill:#1a1a1a,stroke:#444,color:#fff
+    style PPS fill:#008b8b,stroke:#fff,color:#fff
+    style NPS fill:#008b8b,stroke:#fff,color:#fff
+    style IS fill:#2c3e50,stroke:#fff,color:#fff
+    style IB fill:#2c3e50,stroke:#fff,color:#fff
+    style AFS fill:#2c3e50,stroke:#fff,color:#fff
+    style SA fill:#2c3e50,stroke:#fff,color:#fff
+    style OS fill:#2c3e50,stroke:#fff,color:#fff
+
+    %% Styling Arrows
+    %% Signal Path (Indices 0-3): White
+    linkStyle 0,1,2,3 stroke:#fff,stroke-width:2px
+    
+    %% Positive Connections (Indices 4-6): Red
+    linkStyle 4,5,6 stroke:#ff4d4d,stroke-width:2px
+    
+    %% Negative Connections (Indices 7-9): Blue
+    linkStyle 7,8,9 stroke:#4d94ff,stroke-width:2px
