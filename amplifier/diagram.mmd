@@ -1,0 +1,32 @@
+graph TD
+    subgraph Power
+        PPS[POSITIVE POWER SUPPLY]
+        NPS[NEGATIVE POWER SUPPLY]
+    end
+
+    IS[INPUT SIGNAL] --> IDS[INPUT DIFFERENTIAL STAGE]
+    IDS --> VAS[VOLTAGE AMPLIFICATION STAGE]
+    VAS --> DS[DRIVER STAGE]
+    DS --> OPS[OUTPUT POWER STAGE]
+    OPS --> OS[OUTPUT SIGNAL]
+
+    %% Power Connections
+    PPS --> IDS
+    PPS --> VAS
+    PPS --> DS
+    PPS --> OPS
+
+    NPS --> IDS
+    NPS --> VAS
+    NPS --> DS
+    NPS --> OPS
+
+    %% Styling
+    style PPS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style NPS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style IS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style IDS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style VAS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style DS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style OPS fill:#64e5ef,stroke:#000,stroke-width:2px
+    style OS fill:#64e5ef,stroke:#000,stroke-width:2px
